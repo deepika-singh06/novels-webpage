@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    background-color:black;
+    color: white;
+    line-height: 3rem;
+    font-size: 2rem;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    /* gap: 5rem; */
+    
+}
+
+.nav li{
+   position: relative;
+   
+}
+.nav a{
+    white-space: nowrap;
+    padding: 5px 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+.nav a:hover{
+    color: #9b50cc;
+
+}
+.nav-link::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #9b50cc;
+    visibility: hidden;
+    transition:all 0.3s ease-in-out 0s;
+}
+.nav-link:hover::before{
+    width: 70%;
+    visibility: visible;
+}
+
+.content{
+   height: 812px;
+}
+footer{
+    background-color: black;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+#about {
+    text-align: center;
+
+}
+body h2{
+    text-align: center;
+}
+#novels{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5rem;
+    margin-top: 5rem;
+    
+
+
+}
+.novel img{
+    width: 20rem;
+}
+.novel a{
+    text-decoration: none;
+}
+.novel  {
+    text-align:left;
+    
+    
+}
